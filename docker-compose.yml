@@ -1,0 +1,8 @@
+version: '3'
+services:
+  shopping:
+    build: .
+    ports:
+      - "8000:80"  # Use 8000 (or another free port) instead of 8080
+    volumes:
+      - .:/usr/share/nginx/html
